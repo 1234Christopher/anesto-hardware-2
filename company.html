@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anesto Hardware</title>
+    <link rel="stylesheet" href="company.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="company.html" aria-label="Anesto Hardware home">
+                <img class="brand-logo" src="images/anesto-logo-red-black.png" alt="">
+                <span>Anesto Hardware</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a class="active" href="company.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <form class="product-search" role="search" aria-label="Search products" action="products.html#products" method="get">
+                <label class="visually-hidden" for="product-search-input">Search products</label>
+                <input id="product-search-input" type="search" name="q" placeholder="Search products">
+                <button type="submit" aria-label="Search products">
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+                </button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-showcase" aria-labelledby="home-showcase-title">
+            <div class="section-heading">
+                <p>Featured Products</p>
+                <h1 id="home-showcase-title">Explore Our Products</h1>
+            </div>
+
+            <div class="home-card-sets">
+                <div class="home-card-set" data-set-name="Industrial Pumps">
+                    <h2 class="home-card-set-title">Industrial Pumps</h2>
+                    <article class="product-card">
+                        <img src="images/images.jpg" alt="Orange industrial diaphragm pump">
+                        <div class="product-info"><h2>Air Diaphragm Pump</h2><p>A double diaphragm pump for transferring fluids, chemicals and slurries in industrial applications.</p></div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/images-1.jpg" alt="Blue electric centrifugal pump">
+                        <div class="product-info"><h2>Centrifugal Pump</h2><p>A motor-driven pump designed for reliable circulation and transfer of water or compatible liquids.</p></div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/download.webp" alt="Stainless steel submersible pump">
+                        <div class="product-info"><h2>Submersible Pump</h2><p>A compact stainless steel pump suited for lifting clean water from wells, tanks and sumps.</p></div>
+                    </article>
+                </div>
+
+                <div class="home-card-set" data-set-name="Hydraulic Equipment" hidden>
+                    <h2 class="home-card-set-title">Hydraulic Equipment</h2>
+                    <article class="product-card">
+                        <img src="images/images-2.jpg" alt="Portable hydraulic reservoir">
+                        <div class="product-info"><h2>Hydraulic Reservoir</h2><p>A portable hydraulic fluid reservoir with pressure gauge, valves and hose connections for controlled operation.</p></div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/images-3.jpg" alt="Portable hydraulic pump unit">
+                        <div class="product-info"><h2>Hydraulic Power Unit</h2><p>A compact powered hydraulic unit for operating jacks, cylinders and other industrial tools.</p></div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/images-4.jpg" alt="Green hydraulic pump and hose assembly">
+                        <div class="product-info"><h2>Hydraulic Pump Assembly</h2><p>A high-pressure hydraulic pump assembly fitted with hoses and control valves for demanding work.</p></div>
+                    </article>
+                </div>
+
+                <div class="home-card-set" data-set-name="Safety and Technical Tools" hidden>
+                    <h2 class="home-card-set-title">Safety and Technical Tools</h2>
+                    <article class="product-card">
+                        <img src="images/images-6.jpg" alt="Red industrial protective coverall">
+                        <div class="product-info"><h2>Safety Coverall</h2><p>A durable red work suit with reflective bands for visibility and protection in industrial environments.</p></div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/images-7.jpg" alt="Industrial circular chart recorder">
+                        <div class="product-info"><h2>Circular Chart Recorder</h2><p>A mechanical recorder that plots temperature, pressure or process readings on a circular chart.</p></div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/images-14.jpg" alt="Hydraulic torque wrench">
+                        <div class="product-info"><h2>Hydraulic Torque Wrench</h2><p>A low-profile powered torque wrench for accurate tightening of large industrial bolts.</p></div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="home-carousel-controls" aria-label="Featured product set controls">
+                <button class="home-carousel-button" type="button" data-carousel-direction="-1" aria-label="Previous product set">Previous</button>
+                <div class="home-carousel-indicators" aria-label="Choose a product set">
+                    <button class="home-carousel-indicator" type="button" data-carousel-index="0" aria-label="Show Industrial Pumps" aria-pressed="true"></button>
+                    <button class="home-carousel-indicator" type="button" data-carousel-index="1" aria-label="Show Hydraulic Equipment" aria-pressed="false"></button>
+                    <button class="home-carousel-indicator" type="button" data-carousel-index="2" aria-label="Show Safety and Technical Tools" aria-pressed="false"></button>
+                </div>
+                <button class="home-carousel-button" type="button" data-carousel-direction="1" aria-label="Next product set">Next</button>
+            </div>
+        </section>
+
+        <section class="home-logo-section" aria-label="Anesto Hardware">
+            <div class="home-logo-card">
+                <img src="images/anesto-home-logo.png" alt="Anesto Hardware">
+            </div>
+        </section>
+
+        <section class="specialties-section" aria-labelledby="specialties-title">
+            <div class="section-heading">
+                <p>What We Do</p>
+                <h2 id="specialties-title">Specialties of ANESTO HARDWARE</h2>
+            </div>
+
+            <ul class="specialties-list">
+                <li>
+                    <h3>Enerpac Pumps</h3>
+                    <p>Hydraulic pumps for powering compatible cylinders and tools in lifting, pressing, and maintenance work. Confirm pressure and capacity requirements for your application.</p>
+                </li>
+                <li>
+                    <h3>Torque Pumps</h3>
+                    <p>Hydraulic pump equipment used with compatible torque tools for controlled tightening and loosening of industrial fasteners.</p>
+                </li>
+                <li>
+                    <h3>Gauges, Hoses &amp; Jacks</h3>
+                    <p>Hydraulic pressure gauges, fluid-conveying hoses, and lifting jacks for monitoring and supporting workshop and industrial tasks.</p>
+                </li>
+                <li>
+                    <h3>Oil Flow Metres</h3>
+                    <p>Flow-measuring equipment for checking and monitoring oil movement during transfer and industrial processes.</p>
+                </li>
+                <li>
+                    <h3>Spillage Materials</h3>
+                    <p>Materials for helping contain and manage spills in work areas. Select products to suit the liquid and site requirements.</p>
+                </li>
+                <li>
+                    <h3>Absorbent Pads &amp; Booms</h3>
+                    <p>Absorbent pads help collect spills on surfaces, while booms can help contain and control their spread.</p>
+                </li>
+                <li>
+                    <h3>Wilden Pumps &amp; Repair Kits</h3>
+                    <p>Wilden pump equipment and repair kits for fluid-transfer applications and pump maintenance. Match replacement kits to the pump model.</p>
+                </li>
+                <li>
+                    <h3>Industrial Materials &amp; General Contracts</h3>
+                    <p>Industrial material supply and general contract support for a range of organizational and project requirements.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="team-section" aria-labelledby="team-title">
+            <div class="section-heading">
+                <p>Our Leadership</p>
+                <h2 id="team-title">Meet Our Team</h2>
+            </div>
+
+            <div class="team-grid">
+                <article class="team-card">
+                    <img src="images/team-christopher-aneke-white.png" alt="Mr Christopher Aneke, Chief Executive Officer">
+                    <h3>Mr Christopher Aneke</h3>
+                    <p>Chief Executive Officer</p>
+                </article>
+                <article class="team-card">
+                    <img src="images/team-christopher-divine-white.png" alt="Christopher Divine, Project Author">
+                    <h3>Christopher Divine</h3>
+                    <p>Project Author</p>
+                </article>
+                <article class="team-card">
+                    <img src="images/team-aneke-hannah-white.png" alt="Mrs Aneke Hannah, Managing Director">
+                    <h3>Mrs Aneke Hannah</h3>
+                    <p>Managing Director</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-content">
+            <div>
+                <h2>Anesto Hardware</h2>
+                <p>Reliable industrial, hydraulic and safety products.</p>
+            </div>
+
+            <div>
+                <h2>Contact Us</h2>
+                <phone no>
+                    <p>
+                        <a href="tel:+2348033385196">08033385196</a><br>
+                        <a href="tel:+2348075495484">08075495484</a><br>
+                        <a href="tel:+2348030852013">08030852013</a>
+                    </p>
+                </phone no>
+            </div>
+            <div>
+                 <h2>Address</h2>
+                <address>
+                    <p>
+                        <a href="tel:+2348033385196">First: no 11 transamadi industral 
+                            layout opposite zenith bank 
+                        port road,nigeria
+                        </a>
+                        <br>
+
+                        <br>
+                        <a href="tel:+2348033385196">Second: no 16B transamadi industral 
+                            layout opposite TAJ bank
+                        port road,nigeria
+                        </a><br>
+                        
+                    </p>
+                </address>
+            </div>
+            <div>
+                <h2>Email Us</h2>
+                <address>
+                    <p>
+                        <a href="mailto:divinechristopher54@gmail.com">divinechristopher54@gmail.com</a><br>
+                        <a href="mailto:anestohardware@yahoomail.com">anestohardware@yahoomail.com</a>
+                    </p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Anesto Hardware. All rights reserved.</p>
+            <p>Project Author: Christopher Divine</p>
+            <p>Organization Owners: Mr Christopher Aneke and Mrs Amarachi Aneke</p>
+        </div>
+    </footer>
+
+    <script>
+        const cardSets = Array.from(document.querySelectorAll(".home-card-set"));
+        const setIndicators = Array.from(document.querySelectorAll(".home-carousel-indicator"));
+        let currentSet = 0;
+
+        function showCardSet(index) {
+            currentSet = (index + cardSets.length) % cardSets.length;
+            cardSets.forEach((set, setIndex) => {
+                set.hidden = setIndex !== currentSet;
+            });
+            setIndicators.forEach((indicator, setIndex) => {
+                indicator.setAttribute("aria-pressed", String(setIndex === currentSet));
+            });
+        }
+
+        document.querySelectorAll("[data-carousel-direction]").forEach((button) => {
+            button.addEventListener("click", () => {
+                showCardSet(currentSet + Number(button.dataset.carouselDirection));
+            });
+        });
+
+        setIndicators.forEach((indicator) => {
+            indicator.addEventListener("click", () => {
+                showCardSet(Number(indicator.dataset.carouselIndex));
+            });
+        });
+
+        window.setInterval(() => showCardSet(currentSet + 1), 5000);
+    </script>
+    <script src="site-card-effects.js"></script>
+</body>
+</html>

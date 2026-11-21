@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Anesto Hardware</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="company.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="company.html" aria-label="Anesto Hardware home">
+                <img class="brand-logo" src="images/anesto-logo-red-black.png" alt="">
+                <span>Anesto Hardware</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="company.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+
+            <form class="product-search" role="search" aria-label="Search products" action="products.html#products" method="get">
+                <label class="visually-hidden" for="product-search-input">Search products</label>
+                <input id="product-search-input" type="search" name="q" placeholder="Search products">
+                <button type="submit" aria-label="Search products">
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+                </button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section" aria-labelledby="contact-title">
+            <div class="section-heading">
+                <p>ANESTO HARDWARE</p>
+                <h1 id="contact-title">Product Booking Form</h1>
+            </div>
+
+            <div class="contact-layout">
+                <aside class="company-contact-card" aria-labelledby="company-contact-heading">
+                    <h2 id="company-contact-heading">Company Details</h2>
+
+                    <div class="company-contact-item">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <address>
+                                <p>11 Trans Amadi Industrial Layout, opposite Zenith Bank, Port Road, Nigeria</p>
+                                <p>16B Trans Amadi Industrial Layout, opposite TAJ Bank, Port Road, Nigeria</p>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="company-contact-item">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:+2348033385196">08033385196</a></p>
+                            <p><a href="tel:+2348075495484">08075495484</a></p>
+                            <p><a href="tel:+2348030852013">08030852013</a></p>
+                        </div>
+                    </div>
+
+                    <div class="company-contact-item">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:divinechristopher54@gmail.com">divinechristopher54@gmail.com</a></p>
+                            <p><a href="mailto:anestohardware@yahoomail.com">anestohardware@yahoomail.com</a></p>
+                        </div>
+                    </div>
+                </aside>
+
+                <form class="feedback-form" id="bookingForm" action="mailto:divinechristopher54@gmail.com,anestohardware@yahoo.com?subject=New%20ANESTO%20HARDWARE%20Product%20Booking" method="post" enctype="text/plain">
+                    <div class="feedback-brand">
+                        <img class="feedback-emblem" src="images/anesto-logo-red-black.png" alt="Anesto Hardware emblem">
+                        <img class="feedback-wordmark" src="images/anesto-home-logo.png" alt="Anesto Hardware">
+                    </div>
+
+                    <label for="name">Customer Name:</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+
+                    <label for="product">Product Name:</label>
+                    <input type="text" id="product" name="product" required>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" step="1" required>
+
+                    <label for="details">Additional Information:</label>
+                    <textarea id="details" name="details" rows="4"></textarea>
+
+                    <button type="submit">Submit Booking</button>
+                    <p class="form-note">Submitting opens a prefilled email. Review and send the booking from your email app.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <h2>Anesto Hardware</h2>
+                <p>Reliable industrial, hydraulic and safety products.</p>
+            </div>
+
+            <div>
+                <h2>Contact Us</h2>
+                <address>
+                    <p>
+                        <a href="tel:+2348033385196">08033385196</a><br>
+                        <a href="tel:+2348075495484">08075495484</a><br>
+                        <a href="tel:+2348030852013">08030852013</a>
+                    </p>
+                </address>
+            </div>
+
+            <div>
+                <h2>Address</h2>
+                <address>
+                    <p>First: no 11 transamadi industral layout opposite zenith bank, port road, Nigeria</p>
+                    <p>Second: no 16B transamadi industral layout opposite TAJ bank, port road, Nigeria</p>
+                </address>
+            </div>
+
+            <div>
+                <h2>Email Us</h2>
+                <address>
+                    <p>
+                        <a href="mailto:divinechristopher54@gmail.com">divinechristopher54@gmail.com</a><br>
+                        <a href="mailto:anestohardware@yahoomail.com">anestohardware@yahoomail.com</a>
+                    </p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Anesto Hardware. All rights reserved.</p>
+            <p>Project Author: Christopher Divine</p>
+            <p>Organization Owners: Mr Christopher Aneke and Mrs Amarachi Aneke</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const product = document.getElementById("product").value.trim();
+            const quantity = document.getElementById("quantity").value;
+            const details = document.getElementById("details").value.trim();
+
+            const subject = "New ANESTO HARDWARE Product Booking";
+            const message =
+                "NEW PRODUCT BOOKING\n\n" +
+                "Customer Name: " + name + "\n" +
+                "Customer Email: " + email + "\n" +
+                "Phone Number: " + phone + "\n" +
+                "Product Name: " + product + "\n" +
+                "Quantity: " + quantity + "\n" +
+                "Additional Information: " + details;
+
+            const mail = "mailto:divinechristopher54@gmail.com,anestohardware@yahoo.com" +
+                "?subject=" + encodeURIComponent(subject) +
+                "&body=" + encodeURIComponent(message);
+
+            window.location.href = mail;
+        });
+    </script>
+    <script src="site-card-effects.js"></script>
+</body>
+</html>
